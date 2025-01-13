@@ -1,0 +1,17 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Login
+  body 
+    h1 Login
+    form(action="/emp/login", method="POST")
+      div
+        label(for="email") Email:
+        input(type="text", name="email", id="email", placeholder="abc@gmail.com")
+      div
+        label(for="pwd") Password:
+        input(type="password", name="pwd", id="pwd")
+      div
+        input(type="submit" value="Login")
